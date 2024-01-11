@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="insert-data-style.css"/>
+	<link href = "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>INSERT DATA</title>
+	</head>
+	
+	<body>
+		<form action="#" method="post">
+			<h2>Insert Data</h2>
+		
+			<label for="studentId">Student ID:</label>
+			<input type="text" id="studentId" name="studentId" required>
+
+			<label for="violation">Violation:</label>
+			<input type="text" id="violation" name="violation" required>
+
+			<label for="violationType">Type of Violation:</label>
+			<select name="types" id="violationType" name="violationType" required>
+				<option value="v1">Choose</option>
+				<option value="v2">Major Offence</option>
+				<option value="v3">Minor Offence</option>
+			</select>
+
+			<label for="communityServiceHours">Community Service Hours:</label>
+			<input type="number" id="communityServiceHours" name="communityServiceHours" min="0" max="100" step="1"required>
+
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date" required>
+
+			<label for="contactNumber">Contact Number:</label>
+			<input type="tel" id="contactNumber" name="contactNumber" required>
+
+			<input type="submit" value="Submit">
+		</form>
+		
+	<div class = "background-image">
+		<img src = "background-rc.jpg">
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="jscript.js"></script>
+	</body>
+</html>
